@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>servidor para recibir</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <h1>hare servidor</h1>
+  el siguiente cuadro envia lo que escriba alli a un archivo txt llamado base.txt / lo uso para enviar linkx de un dispositivo a la pc <br>
+  te reto a hacer que lo que sea que tenga el texto lo muestre en la pagina de forma temporal hasta que reemplacen el texto
+  <br>
+  <form action="/info" method="post">
+    <label for="texto">ingresa link</label>
+    <textarea type="text" name="tex" id="texto"></textarea>
+    <input type="submit" value="click aqui">
+  </form>
+
+  <div>
+    <fieldset>
+      <legend>subir archivos</legend>
+      <form action="/files" method="post" enctype="multipart/form-data">
+        <label for="archivo">sube tu archivo</label>
+        <input type="file" name="archi" id="archivo">
+        <input type="submit" value="enviar">
+      </form>
+    </fieldset>
+  </div>
+</body>
+</html>
